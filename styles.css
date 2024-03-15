@@ -1,0 +1,162 @@
+
+
+.fondo-claro {
+    background-color: #f9f9f9;
+  }
+  
+  .fondo-oscuro {
+    background-color: #393939;
+  }
+
+  .fondo-verde {
+    background-color: #0ACF83;
+  }
+
+#fotoprincipal {
+    width: 600px;
+    left: 600px;
+    position: static;
+  }
+
+  #aphelandra2 {
+    width: 400px;
+    left: 400px;
+    position: static;
+  }
+
+  #photus2 {
+    width: 400px;
+    left: 400px;
+    position: static;
+  }
+
+  /* -------- ----SECTION HUERTA------ -----*/
+
+.section-huerta {
+  background-color: #393939;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 200px;
+
+}
+
+.huerta {
+    flex: 1;
+    /* Opcional: agrega margen, padding, borde y color de fondo */
+    margin: 10px;
+    padding: 10px;
+  }
+
+ 
+
+  #imagendehuerta {
+    width: 400px;
+    left: 400px;
+    position: static;
+  }
+
+ 
+.estilo {
+        font-family: "Asul", serif;
+        font-weight: 400;
+        font-style: normal;
+  }
+
+
+p {
+    font-family: "Asul", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1 {
+    font-family: "Asul", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h2 {
+    font-family: "Asul", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Asul", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#Logoplanverde {
+  width: 100px;
+  left: 100px;
+  position: static;
+}
+
+
+@media (min-width: 1030px) {
+  .offcanvas-body {
+      transform: translateX(-1.5rem);
+  }}
+
+
+  /* -------- ----CAROUSEL------ -----*/
+
+  .carousel__contenedor{
+      position: relative;
+
+  }
+  
+  .carousel__anterior,
+  .carousel__siguiente {
+      position: absolute;
+      display:block;
+      width: 30px;
+      height: 30px;
+      border: none;
+      top: calc(50% - 35px);
+      cursor: pointer;
+      line-height: 30px;
+      text-align: center;
+      background: none;
+      color: #fff;
+      opacity: 20%;
+
+  }
+
+  .carousel__anterior :hover
+  .carousel__siguiente:hover {
+    opacity: 100%;
+  }
+.carousel__anterior{
+  left: -30px;
+}
+
+.carousel__siguiente{
+  right: -30px;
+}
+
+.carousel__lista {
+  overflow: hidden;
+}
+
+.carousel__elemento {
+  text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  opacity: .2;
+  border-radius: 0;
+}
+
+.carousel {
+ background-color: #0ACF83;
+}
