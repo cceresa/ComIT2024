@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="/styles.css" />
+
     </head>
     
     <body>
@@ -49,14 +50,15 @@
             
     <!-- Inicio section -->
 
-        <main id="inicio" class="fondo-claro">
-                        <div id="titulosinicio">
-                  <h1>Conectá con la naturaleza</h1>
-                  <p>En Plan verde creemos en la belleza y el poder transformador de la naturaleza.</p>
-                </div>
-                <div id="imagendeinicio">
-                  <img id="fotoprincipal" src="/images/fotoprincipal.png" alt="foto de flor de dietes" />
-                </div>
+    <main id="inicio" >
+       <div id="contenido-principal" class="contenido-principal">
+        <div class="caja-blanca">
+            <h1 class="titulo-principal">Conectá con la naturaleza</h1>
+            <p class="parrafo-principal">En Plan verde creemos en la belleza y el poder transformador de la naturaleza.</p>
+        </div>
+        <div class="caja-verde">
+            <img src="images/fotoprincipal.png" alt="foto de dietes" class="foto-principal">
+        </div>
         </main>
             
     <!-- Tu tienda online section -->
@@ -139,40 +141,51 @@
 
 <!-- Huerta en casa section -->
     <section id="Huerta en casa" class="section-huerta">
-                <div class="huerta">
-                    <h2>Huerta en casa</h2>
-                    <p>Todo lo que necesitas para cultivar tus propios alimentos</p>
+        
+        <div class="caja1">
+                    <h2 class="titulohuerta">Huerta en casa</h2>
+                    <p class="textohuerta">Todo lo que necesitas para cultivar tus propios alimentos</p>
+                    <div class="boton"><a class="botonhuerta" href="">Recibir información</a></div>
                 </div>
-                <div id="imagen de huerta">
-                    <img id="imagendehuerta" src="/images/huerta4.png" alt="Foto de germinacion de plantines">
-                </div>
+        <div class="caja2"></div>
                 <!--AGREGAR BOTON-->
             </section>
 
-<!-- servicios section -->
+<!-- servicios section carrusel -->
 
-    <section id="carrusel-de-servicios" class="fondo-verde">
-                <div id="paisajismo y mantenimiento">
-                    <h3>Paisajismo y mantenimiento</h3>
+    <section id="carrusel-de-servicios" >
+        <div class="parteizquierda">
+            <p>Servicios que ofrecemos</p>
+        </div>
+
+        <div class="carrusel-servicios">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/atencionpersonalizada5.png" class="d-block w-100" alt="Imagen de atención personalizada">
+                       <p>Atención personalizada</p>
                 </div>
-                <div id="imagen de paisajismo">
-                    <img id="servicios5" src="/images/servicios5.png" alt="Foto de paisajismo"> <!--ACA EL ALT ES INNECESARIO?-->
-                </div>   
-                
-                <div id="Asesoramiento a empresas">
-                    <h3>Asesoramiento a empresas</h3>
+                  <div class="carousel-item">
+                    <img src="images/servicios5.png" class="d-block w-100" alt="Paisajismo y mantenimiento">
+                <p>Paisajismo y mantenimiento</p>  
                 </div>
-                <div id="imagen de Asesoramiento a empresas">
-                    <img id="jardinvertical5" src="/images/jardinvertical5.png" alt="Foto de jardin vertical">
-                </div>   
-                
-                <div id="atencion personalizada">
-                    <h3>Atención personalizada</h3>
+                  <div class="carousel-item">
+                    <img src="images/alquiler.jpg" class="d-block w-100" alt="Alquiler de plantas para eventos">
+                    <p>Alquiler de plantas para eventos</p>
                 </div>
-                <div id="imagen de atención personalizada">
-                    <img id="atencionpersonalizada5" src="/images/atencionpersonalizada5.png" alt="Foto de atención personalizada">
-                </div>   
-            </section>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+    </section>
 
 
         <footer><small>Info menos importante y cuestiones de copyright
@@ -188,7 +201,13 @@
 
 <!-- JavaScript -->
 <script src="index.js"></script>
-    </body>
+
+
+<!--bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+</body>
 
     </html>
 </DOCTYPE>
